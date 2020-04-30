@@ -11,7 +11,7 @@ export default class Head extends Component{
         <header className="header">
         <Navbar variant="light">
           <Navbar.Brand className="d-inline-block align-top">
-            <Logo class="logo" />
+            <Logo className="logo" />
           </Navbar.Brand>
         </Navbar>
         <Container className="centered">
