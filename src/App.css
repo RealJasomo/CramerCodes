@@ -86,53 +86,53 @@
 }
 @keyframes blinking {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   25% {
-    opacity: 25%;
+    opacity: .25;
   }
   50% {
-    opacity: 50%;
+    opacity: .5;
   }
   75% {
-    opacity: 75%;
+    opacity: .75;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @-webkit-keyframes blinking {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   25% {
-    opacity: 25%;
+    opacity: .25;
   }
   50% {
-    opacity: 50%;
+    opacity: .5;
   }
   75% {
-    opacity: 75%;
+    opacity: .75;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @-moz-keyframes blinking {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   25% {
-    opacity: 25%;
+    opacity: .25;
   }
   50% {
-    opacity: 50%;
+    opacity: .5;
   }
   75% {
-    opacity: 75%;
+    opacity: .75;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 .profile_image {
