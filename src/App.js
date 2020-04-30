@@ -77,9 +77,9 @@ function App() {
       </header>
       <Container className="skills">
         <h1>Skills</h1>
-        <Container >
-          <Row>
-            <Col>
+        <Container>
+          <Row> 
+            <Col className="grid_element">
               <Card style={{ width: "18rem"}}>
                 <Card.Img variant="top" src={java}/>
                 <Card.Body>
@@ -87,8 +87,8 @@ function App() {
                 </Card.Body>
               </Card>
             </Col>
-            <br/>
-            <Col>
+            
+            <Col className="grid_element">
               <Card style={{ width: "18rem"}}>
                 <Card.Img variant="top" src={python} />
                 <Card.Body>
@@ -96,8 +96,8 @@ function App() {
                 </Card.Body>
               </Card>
             </Col>
-            <br/>
-            <Col>
+            
+            <Col className="grid_element">
               <Card style={{ width: "18rem"}}>
                 <Card.Img variant="top" src={rust} />
                 <Card.Body>
@@ -108,7 +108,7 @@ function App() {
           </Row>
           <br/>
           <Row>
-            <Col>
+            <Col className="grid_element">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={clangs} />
                 <Card.Body>
@@ -116,8 +116,8 @@ function App() {
                 </Card.Body>
               </Card>
             </Col>
-            <br/>
-            <Col>
+            
+            <Col className="grid_element">
               <Card style={{ width: "18rem"}}>
                 <Card.Img variant="top" src={js} />
                 <Card.Body>
@@ -125,8 +125,8 @@ function App() {
                 </Card.Body>
               </Card>
             </Col>
-            <br/>
-            <Col>
+            
+            <Col className="grid_element">
               <Card style={{ width: "18rem"}}>
                 <Card.Img variant="top" src={node} />
                 <Card.Body>
@@ -137,7 +137,7 @@ function App() {
           </Row>
           <br/>
           <Row>
-            <Col>
+            <Col className="grid_element">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={vue} />
                 <Card.Body>
@@ -145,8 +145,7 @@ function App() {
                 </Card.Body>
               </Card>
             </Col>
-            <br/>
-            <Col>
+            <Col className="grid_element">
               <Card style={{ width: "18rem"}}>
                 <Card.Img variant="top" src={react} />
                 <Card.Body>
@@ -154,8 +153,7 @@ function App() {
                 </Card.Body>
               </Card>
             </Col>
-            <br/>
-            <Col>
+            <Col className="grid_element">
               <Card style={{ width: "18rem"}}>
                 <Card.Img variant="top" src={gcp} />
                 <Card.Body>
