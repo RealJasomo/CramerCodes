@@ -16,6 +16,8 @@ export default class Head extends Component {
         </Navbar>
         <Container className="centered">
           <Image roundedCircle src={me} className="profile_image" />
+        </Container>
+          <br />
           <br />
           <br />
           <h1>Hi, I'm Jason Cramer</h1>
@@ -43,7 +45,7 @@ export default class Head extends Component {
             </a>
             <br />
           </div>
-        </Container>
+       
         <Particles
           className="particles"
           width="100vw"

@@ -12,6 +12,7 @@ function App() {
       </section>
         <Navigate />
         <section id="skill">
+          <div className="skill_spacer"/>
           <Skill />
         </section>
     </div>
