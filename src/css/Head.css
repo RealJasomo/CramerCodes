@@ -69,9 +69,9 @@
     max-height: 100vh;
   }
   .fade-in{
-    animation: blinking 3s normal forwards;
-    -webkit-animation: blinking 3s normal forwards;
-    -moz-animation: blinking 3s normal forwards;
+    animation: blinking 2s normal forwards;
+    -webkit-animation: blinking 2s normal forwards;
+    -moz-animation: blinking 2s normal forwards;
   }
   .indicator span:nth-child(1) {
     animation-delay: -0.4s;
