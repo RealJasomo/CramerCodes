@@ -1,17 +1,17 @@
-import React, {Component} from 'react';
-import {Navbar, Image, Container} from 'react-bootstrap';
+import React, { Component } from "react";
+import { Navbar, Image, Container } from "react-bootstrap";
 import Typical from "react-typical";
-import { ReactComponent as Logo } from "../img/logo.svg";
 import Particles from "react-particles-js";
 import me from "../img/me.PNG";
+import logo from "../img/logo.svg";
 import "../css/Head.css";
-export default class Head extends Component{
-    render(){
-        return(
-        <header className="header">
+export default class Head extends Component {
+  render() {
+    return (
+      <header className="header">
         <Navbar variant="light">
           <Navbar.Brand className="d-inline-block align-top">
-            <Logo className="logo" />
+            <Image src={logo} className="logo" />
           </Navbar.Brand>
         </Navbar>
         <Container className="centered">
@@ -34,21 +34,24 @@ export default class Head extends Component{
               ]}
             />
           </p>
+          <div className="indicator">
+            <br />
+            <a href="#skill">
+            <span />
+            <span />
+            <span />
+            </a>
+            <br />
+          </div>
         </Container>
-        
-        <div className="indicator">
-          <span />
-          <span />
-          <span />
-          <br/>
-        </div><Particles
+        <Particles
           className="particles"
           width="100vw"
           height="100vh"
           params={{
             particles: {
               number: {
-                value: window.innerWidth/20,
+                value: window.innerWidth / 20,
               },
               size: {
                 value: 3,
@@ -65,6 +68,6 @@ export default class Head extends Component{
           }}
         />
       </header>
-        )
-    }
+    );
+  }
 }

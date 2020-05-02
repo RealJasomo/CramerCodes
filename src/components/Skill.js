@@ -25,7 +25,6 @@ export default class Skill extends Component{
                 </Card.Body>
               </Card>
             </Col>
-            
             <Col className="grid_element">
               <Card style={{ width: "18rem"}}>
                 <Card.Img variant="top" src={python} />
@@ -34,7 +33,6 @@ export default class Skill extends Component{
                 </Card.Body>
               </Card>
             </Col>
-            
             <Col className="grid_element">
               <Card style={{ width: "18rem"}}>
                 <Card.Img variant="top" src={rust} />
@@ -43,9 +41,6 @@ export default class Skill extends Component{
                 </Card.Body>
               </Card>
             </Col>
-          </Row>
-          <br/>
-          <Row>
             <Col className="grid_element">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={clangs} />
@@ -54,7 +49,6 @@ export default class Skill extends Component{
                 </Card.Body>
               </Card>
             </Col>
-            
             <Col className="grid_element">
               <Card style={{ width: "18rem"}}>
                 <Card.Img variant="top" src={js} />
@@ -63,7 +57,6 @@ export default class Skill extends Component{
                 </Card.Body>
               </Card>
             </Col>
-            
             <Col className="grid_element">
               <Card style={{ width: "18rem"}}>
                 <Card.Img variant="top" src={node} />
@@ -72,9 +65,6 @@ export default class Skill extends Component{
                 </Card.Body>
               </Card>
             </Col>
-          </Row>
-          <br/>
-          <Row>
             <Col className="grid_element">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={vue} />
