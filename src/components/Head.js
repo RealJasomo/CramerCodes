@@ -17,6 +17,7 @@ export default class Head extends Component {
         <Container className="centered">
           <Image roundedCircle src={me} className="profile_image" />
         </Container>
+        <Container className="header_text">
           <br />
           <br />
           <br />
@@ -36,6 +37,7 @@ export default class Head extends Component {
               ]}
             />
           </p>
+          </Container>
           <div className="indicator">
             <br />
             <a href="#skill">
