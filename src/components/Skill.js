@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, Container, Col, Row} from "react-bootstrap";
+import {Card, Container, Col, Row, Fade} from "react-bootstrap";
 import java from "../img/logos/java.png";
 import python from "../img/logos/python.png";
 import rust from "../img/logos/rust.png";
@@ -11,6 +11,27 @@ import react from "../img/logos/react.png";
 import vue from "../img/logos/vue.png";
 
 export default class Skill extends Component{
+  componentDidMount(){
+    let elements = document.getElementsByClassName("grid_element");
+    let arr = [];
+    let index;
+    for(index = 0; index < elements.length; index++){
+      arr.push(elements[index].offsetTop);
+    }
+    window.onscroll = function () {
+      updateColumn();
+    };
+    function updateColumn(){
+      for(index = 0; index < elements.length; index++){
+        if(arr[index]<window.innerHeight+window.pageYOffset){
+          elements[index].classList.add("fade-in");
+        }else{
+          elements[index].classList.remove("fade-in");
+        }
+      }
+    }
+    console.log(arr);
+  }
     render(){
         return(
         <Container className="skills">
