@@ -15,10 +15,11 @@ export default class Skill extends Component {
     let elements = document.getElementsByClassName("skill_card");
     let index;
     let arr = [];
-    for (index = 0; index < elements.length; index++) {
-      arr.push(elements[index].offsetTop);
-    }
     window.addEventListener("resize", function () {
+      arr = [];
+      for (index = 0; index < elements.length; index++) {
+        arr.push(elements[index].offsetTop);
+      }
       if (window.innerWidth < 650) {
         elements[4].childNodes[1].childNodes[0].innerHTML= "JavaScript";
         for (index = 0; index < elements.length; index++) {
