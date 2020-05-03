@@ -18,23 +18,25 @@ export default class Skill extends Component {
     for (index = 0; index < elements.length; index++) {
       arr.push(elements[index].offsetTop);
     }
-    window.addEventListener(
-      "resize",
-      function(){
-        if(window.innerWidth < 650){
-          for (index = 0; index < elements.length; index++) {
-            if(window.innerWidth > 400)
-              elements[index].style.flexBasis = "40%";
-            else
-              elements[index].style.flexBasis = "50%";
+    window.addEventListener("resize", function () {
+      if (window.innerWidth < 650) {
+        elements[4].childNodes[1].childNodes[0].innerHTML= "JavaScript";
+        for (index = 0; index < elements.length; index++) {
+          if (window.innerWidth > 400) elements[index].style.flexBasis = "40%";
+          else {
+            elements[index].style.flexBasis = "50%";
+            if (window.innerWidth < 375)
+              //set JavaScript to Java Script for readability
+              elements[4].childNodes[1].childNodes[0].innerHTML= "Java Script";
           }
-        }else{
-            for (index = 0; index < elements.length; index++) {
-                elements[index].style.flexBasis = "30%";
-            }
+        }
+      } else {
+        for (index = 0; index < elements.length; index++) {
+          elements[index].style.flexBasis = "30%";
         }
       }
-    );
+    });
+    window.dispatchEvent(new Event("resize"));
     window.addEventListener(
       "scroll",
       function () {

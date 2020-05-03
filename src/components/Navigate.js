@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component} from "react";
 import { Navbar, Nav, Image } from "react-bootstrap";
 import logo from "../img/logo.svg";
 import "../css/Navigate.css";
