@@ -64,17 +64,17 @@
   animation-delay: -0.4s;
   -webkit-animation-delay: -0.4s;
   -moz-animation-delay: -0.4s;
-  transform: rotate(45deg) translate(15px, 15x);
-  -webkit-transform: rotate(45deg) translate(15px, 15px);
-  -moz-transform: rotate(45deg) translate(15px, 15px);
+  transform: rotate(45deg) translate(10px, 10x);
+  -webkit-transform: rotate(45deg) translate(10px, 10px);
+  -moz-transform: rotate(45deg) translate(10px, 10px);
 }
 .indicator span:nth-child(2) {
   animation-delay: -0.2s;
   -webkit-animation-delay: -0.2s;
   -moz-animation-delay: -0.2s;
-  transform: rotate(45deg) translate(10px, 10px);
-  -webkit-transform: rotate(45deg) translate(10px, 10px);
-  -moz-transform: rotate(45deg) translate(10px, 10px);
+  transform: rotate(45deg) translate(5px, 5px);
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+  -moz-transform: rotate(45deg) translate(5px, 5px);
 }
 @keyframes blinking {
   0% {
