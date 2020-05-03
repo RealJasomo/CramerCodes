@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactCardFlip from "react-card-flip";
 import { Card } from "react-bootstrap";
 import clangs from "../../img/logos/c-langs.png";
 export default class ClangCard extends Component {

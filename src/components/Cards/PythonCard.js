@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactCardFlip from "react-card-flip";
 import { Card } from "react-bootstrap";
 import python from "../../img/logos/python.png";
 export default class PythonCard extends Component {

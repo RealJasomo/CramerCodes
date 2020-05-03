@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactCardFlip from "react-card-flip";
 import { Card } from "react-bootstrap";
 import rust from "../../img/logos/rust.png";
 export default class RustCard extends Component {

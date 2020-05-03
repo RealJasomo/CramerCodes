@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactCardFlip from "react-card-flip";
 import { Card } from "react-bootstrap";
 import js from "../../img/logos/js.png";
 export default class JSCard extends Component {

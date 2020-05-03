@@ -29,7 +29,8 @@ export default class Navigate extends Component {
         </Navbar.Brand>
         <Nav>
           <Nav.Link href="#top">Home</Nav.Link>
-          <Nav.Link href="#skill">Skills</Nav.Link>
+          <Nav.Link href="#skills">Skills</Nav.Link>
+          <Nav.Link href="#projects">Projects</Nav.Link>
         </Nav>
       </Navbar>
     );

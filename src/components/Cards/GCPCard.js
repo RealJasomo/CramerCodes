@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactCardFlip from "react-card-flip";
 import { Card } from "react-bootstrap";
 import gcp from "../../img/logos/gcp.png";
 export default class GCPCard extends Component {

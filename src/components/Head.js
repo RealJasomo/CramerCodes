@@ -46,7 +46,7 @@ export default class Head extends Component {
           </Container>
           <div className="indicator">
             <br />
-            <a href="#skill">
+            <a href="#skills">
             <span />
             <span />
             <span />
