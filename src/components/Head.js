@@ -6,6 +6,12 @@ import me from "../img/me.PNG";
 import logo from "../img/logo.svg";
 import "../css/Head.css";
 export default class Head extends Component {
+  width = window.innerWidth/20;
+  componentDidMount(){
+    window.addEventListener('resize',function(){
+        this.width = window.innerWidth/20;
+    });
+  }
   render() {
     return (
       <header className="header">
@@ -55,7 +61,7 @@ export default class Head extends Component {
           params={{
             particles: {
               number: {
-                value: window.innerWidth / 20,
+                value: this.width,
               },
               size: {
                 value: 3,

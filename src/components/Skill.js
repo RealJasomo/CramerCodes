@@ -13,11 +13,28 @@ import "../css/Skill.css";
 export default class Skill extends Component {
   componentDidMount() {
     let elements = document.getElementsByClassName("skill_card");
-    let arr = [];
     let index;
+    let arr = [];
     for (index = 0; index < elements.length; index++) {
       arr.push(elements[index].offsetTop);
     }
+    window.addEventListener(
+      "resize",
+      function(){
+        if(window.innerWidth < 650){
+          for (index = 0; index < elements.length; index++) {
+            if(window.innerWidth > 400)
+              elements[index].style.flexBasis = "40%";
+            else
+              elements[index].style.flexBasis = "50%";
+          }
+        }else{
+            for (index = 0; index < elements.length; index++) {
+                elements[index].style.flexBasis = "30%";
+            }
+        }
+      }
+    );
     window.addEventListener(
       "scroll",
       function () {
