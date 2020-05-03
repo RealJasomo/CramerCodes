@@ -1,7 +1,6 @@
 import React from "react";
-import Head from "./components/Head";
-import Skill from "./components/Skill";
-import Navigate from "./components/Navigate";
+import {Head, Skill, Navigate} from "./components";
+
 import "./css/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {

@@ -1,14 +1,8 @@
 import React, { Component } from "react";
 import { Card, Container } from "react-bootstrap";
-import java from "../img/logos/java.png";
-import python from "../img/logos/python.png";
-import rust from "../img/logos/rust.png";
-import clangs from "../img/logos/c-langs.png";
-import js from "../img/logos/js.png";
-import node from "../img/logos/nodejs.png";
-import gcp from "../img/logos/gcp.png";
-import react from "../img/logos/react.png";
-import vue from "../img/logos/vue.png";
+import {JavaCard, PythonCard, RustCard, ClangCard, JSCard, NodeCard, VueCard, ReactCard, GCPCard} from './Cards';
+
+
 import "../css/Skill.css";
 export default class Skill extends Component {
   componentDidMount() {
@@ -21,7 +15,7 @@ export default class Skill extends Component {
         arr.push(elements[index].offsetTop);
       }
         elements[4].childNodes[1].childNodes[0].innerHTML= "JavaScript";
-            if (window.innerWidth < 375)
+            if (window.innerWidth < 380)
               elements[4].childNodes[1].childNodes[0].innerHTML= "Java Script";
 
     });
@@ -46,67 +40,15 @@ export default class Skill extends Component {
         <div className="outer_card_container">
           <h1>Skills</h1>
           <div className="card_container">
-            <Card className="skill_card">
-              <Card.Img variant="top" src={java} />
-              <Card.Body>
-                <Card.Title>Java</Card.Title>
-              </Card.Body>
-            </Card>
-            <Card className="skill_card">
-              <Card.Img variant="top" src={python} />
-              <Card.Body>
-                <Card.Title>Python</Card.Title>
-              </Card.Body>
-            </Card>
-
-            <Card className="skill_card">
-              <Card.Img variant="top" src={rust} />
-              <Card.Body>
-                <Card.Title>Rust</Card.Title>
-              </Card.Body>
-            </Card>
-
-            <Card className="skill_card">
-              <Card.Img variant="top" src={clangs} />
-              <Card.Body>
-                <Card.Title>C/C++</Card.Title>
-              </Card.Body>
-            </Card>
-
-            <Card className="skill_card">
-              <Card.Img variant="top" src={js} />
-              <Card.Body>
-                <Card.Title>JavaScript</Card.Title>
-              </Card.Body>
-            </Card>
-
-            <Card className="skill_card">
-              <Card.Img variant="top" src={node} />
-              <Card.Body>
-                <Card.Title>NodeJS</Card.Title>
-              </Card.Body>
-            </Card>
-
-            <Card className="skill_card">
-              <Card.Img variant="top" src={vue} />
-              <Card.Body>
-                <Card.Title>VueJS</Card.Title>
-              </Card.Body>
-            </Card>
-
-            <Card className="skill_card">
-              <Card.Img variant="top" src={react} />
-              <Card.Body>
-                <Card.Title>React</Card.Title>
-              </Card.Body>
-            </Card>
-
-            <Card className="skill_card">
-              <Card.Img variant="top" src={gcp} />
-              <Card.Body>
-                <Card.Title>Google Cloud</Card.Title>
-              </Card.Body>
-            </Card>
+            <JavaCard />
+            <PythonCard />
+            <RustCard />
+            <ClangCard />
+            <JSCard />
+            <NodeCard />
+            <VueCard />
+            <ReactCard />
+            <GCPCard />
           </div>
         </div>
         <br />
