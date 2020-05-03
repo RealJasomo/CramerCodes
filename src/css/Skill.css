@@ -11,3 +11,15 @@
     width: 18rem;
     margin-top: 10px;
 }
+
+.skills {
+    color: #030303;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+  
+  .fade-in{
+    animation: blinking 2s normal forwards;
+    -webkit-animation: blinking 2s normal forwards;
+    -moz-animation: blinking 2s normal forwards;
+  }
