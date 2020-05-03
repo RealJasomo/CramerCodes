@@ -23,6 +23,8 @@ export default class Skill extends Component {
       function () {
         for (index = 0; index < elements.length; index++) {
           if (arr[index] < window.innerHeight + window.pageYOffset) {
+            elements[index].style.opacity = 0;
+            elements[index].style.animationDelay = "" + index * 0.4 + "s";
             elements[index].classList.add("fade-in");
           } else {
             elements[index].classList.remove("fade-in");
